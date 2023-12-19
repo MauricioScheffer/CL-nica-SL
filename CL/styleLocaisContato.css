@@ -1,0 +1,179 @@
+/* ESTILO GERAL */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Barlow', sans-serif;
+}
+
+body{
+    background-color: white;
+    height: 100vh;
+}
+
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+}
+
+.btn-servicos button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #00c4cc;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer; 
+    transition: .2s;
+}
+
+.btn-contato button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #00c4cc;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.btn-contato button:hover{
+    box-shadow: 0px 0px 8px #00c5ccaa;
+    transform: scale(1.05);
+}
+
+/* ESTILO DO CABEÇALHO */
+header{
+    padding: 40px 4%;
+}
+
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a{
+    color: #00c4cc;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+header a:hover{
+    color: #000;
+    transform: scale(1.05);
+}
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 0 40px;
+    font-weight: 900;
+}
+
+header .btn-servicos button:hover{
+    box-shadow: 0px 0px 8px #00c5ccaa;
+    transform: scale(1.05);
+}
+
+/* ESTILO DO TOPO DO SITE */
+
+section.topo-do-site{
+    padding: 40px 4%;
+}
+
+section.topo-do-site .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.topo-do-site h1{
+    color: #00c4cc;
+    font-size: 26px;
+}
+
+.topo-do-site .txt-topo-site p{
+    color: #000000;
+    margin: 40px 0;
+}
+
+.txt-topo-site h3{
+    line-height: 200%;
+}
+.txt-topo-site{
+    padding-left: -10%;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    padding-left: 10px;
+    max-width: auto;
+    height: 100px;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    margin-top: 7%;
+}
+
+/* SITE RESPONSIVO */
+@media screen and (max-width: 600px){
+    header{
+        padding: 2px;
+    }
+    
+    .logo{
+        width: 20%;
+        padding: 10%;
+        margin-top: -40%;
+    }
+
+    .menu{
+        margin-top: 40%;
+        padding: 2px;
+        margin-left: -20%;
+        padding-right: 1%;
+        font-size: x-large;
+    }
+
+    main{
+        margin-top: 10%;
+    }
+
+    .btn-servicos{
+        margin-top: 55%;
+        font-size: x-large;
+    }
+
+    .flex{
+        flex-direction: column;
+    }
+
+    .txt-do-site{
+        display: block;
+    }
+
+    .btn-contato{
+        margin-top: 10%;
+    }
+
+    .mapa{
+        margin-top: -9%;
+        width: auto;
+    }
+
+    footer{
+        padding: 10px;
+    }
+
+}

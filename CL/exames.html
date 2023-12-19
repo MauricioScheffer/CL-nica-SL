@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="clinica.png" type="image/x-icon">
+    <link rel="stylesheet" href="styleExames.css">
+    <title>Clínica Médica São Lucas</title>
+</head>
+
+<body>
+    <!-- CABEÇALHO -->
+    <header>
+        <div class="interface">
+            <div class="logo">
+                <a href="http://127.0.0.1:5500/index.html">
+                    <img src="clinica.png" alt="Logo da Clinica" width="300px">
+                </a>
+            </div> <!--logo-->
+
+            <nav class="menu">
+                <ul>
+                    <li><a href="http://127.0.0.1:5500/index.html">Inicio</a></li>
+                    <li><a href="http://127.0.0.1:5500/exames.html">Exames</a></li>
+                    <li><a href="http://127.0.0.1:5500/profissionais.html">Profissionais</a></li>
+                    <li><a href="http://127.0.0.1:5500/locaiscontato.html">Locais e Contato</a></li>
+                </ul>
+            </nav>
+
+            <div class="btn-servicos">
+                <a href="http://127.0.0.1:5500/servicos.html">
+                    <button>Serviços</button>
+                </a>
+            </div><!-- button servicos -->
+        </div> <!--interface-->
+    </header>
+    <body>
+    <main class="form">
+        <form action="/pagina-processa-dados-do-form" method="post">
+            <div>
+              <label class="nome" for="nome">Nome</label>
+              <input class="campo" type="text" id="nome" required>
+            </div>
+            <div>
+                <label class="sobrenome" for="sobrenome">Sobrenome</label>
+                <input class="campo" type="text" id="sobrenome" required>
+            </div>
+            <div>
+              <label class="email" for="email">E-mail</label>
+              <input class="campo" type="email" id="email" required>
+            </div>
+            <div>
+                <label class="telefone" for="telefone">Telefone</label>
+                <input class="campo" type="number" id="telefone" required>
+            </div>
+            <div>
+              <label class="exame" for="exame">Exame</label>
+              <textarea class="campo" rows="6" style="width: 26em" id="exame" name="exame" required></textarea>
+            </div>
+          </form>
+          
+          <br>
+          <a href="http://127.0.0.1:5500/index.html">
+            <button class="botao">Enviar</button>
+            </a>
+    </main>
+    <script src="script.js"></script>
+    
+    <footer>
+        Copyright Arthur Maciel e Mauricio Scheffer
+       </footer>
+    </body>
+    </html>

@@ -1,0 +1,206 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Barlow', sans-serif;
+}
+
+body{
+    background-color: white;
+    height: 100vh;
+}
+
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+}
+
+.btn-servicos button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #00c4cc;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer; 
+    transition: .2s;
+}
+
+.btn-contato button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #00c4cc;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.btn-contato button:hover{
+    box-shadow: 0px 0px 8px #00c5ccaa;
+    transform: scale(1.05);
+}
+
+/* ESTILO DO CABEÇALHO */
+header{
+    padding: 40px 4%;
+}
+
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a{
+    color: #00c4cc;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+header a:hover{
+    color: #000;
+    transform: scale(1.05);
+}
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 0 40px;
+    font-weight: 900;
+}
+
+header .btn-servicos button:hover{
+    box-shadow: 0px 0px 8px #00c5ccaa;
+    transform: scale(1.05);
+}
+
+section.topo-do-site{
+    padding: 40px 4%;
+}
+
+section.topo-do-site .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.topo-do-site h1{
+    color: #00c4cc;
+    font-size: 26px;
+}
+
+/* .topo-do-site .txt-topo-site h1 span{
+    color: #00c4cc;
+} */
+
+.topo-do-site .txt-topo-site p{
+    color: #000;
+    margin: 40px 0;
+    font-weight: 900;
+}
+
+.img-topo-site .imagem{
+    width: auto;
+    border: solid;
+    border-color: #00c4cc;
+    border-radius: 30%;
+}
+
+.txt-topo-site{
+    gap: -60%;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 40px;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    margin-top: 7%;
+    width: 100%;
+}
+
+#img{
+    height: 300px;
+    width: 400px;
+}
+
+/* Deixando o site responsivo */
+@media screen and (max-width: 600px){
+    header{
+        padding: 2px;
+    }
+    
+    .logo{
+        width: 20%;
+        padding: 10%;
+        margin-top: -40%;
+    }
+
+    .menu{
+        margin-top: 40%;
+        padding: 2px;
+        margin-left: -20%;
+        padding-right: 1%;
+        font-size: x-large;
+    }
+
+    main{
+        margin-top: 10%;
+    }
+
+    .btn-servicos{
+        margin-top: 55%;
+        font-size: x-large;
+    }
+
+    footer{
+        padding: 10px;
+        height: 70px;
+    }
+
+    p{
+        text-align: justify;
+        font-size: x-large;
+    }
+
+    #mario{
+        padding: 7%;
+    }
+
+    #img1{
+        margin-left: 10%;
+    }
+
+    #sonico{
+        padding: 7%;
+    }
+
+    #peste{
+        padding: 7%;
+    }
+
+    #img{
+        width: 325px;
+        height: 250px;
+    }
+
+    .flex{
+        display: block;
+    }
+
+    .botao{
+        margin-left: 15%;
+    }
+}
